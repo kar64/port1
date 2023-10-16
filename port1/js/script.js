@@ -1,5 +1,9 @@
 
-    $(".hamburger").click(function(){
+$(function() {
+
+	new WOW().init();
+
+   $(".hamburger").click(function(){
         $(this).toggleClass("is-active");
     
         if($(this).hasClass('is-active')){
@@ -36,3 +40,4 @@
 		event.preventDefault();
 	});
 
+});
